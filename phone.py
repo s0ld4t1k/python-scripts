@@ -10,8 +10,8 @@ def analyze(number):
     possible=phonenumbers.is_possible_number(x)
     print(x,timeZone,Carrier,Region,f'Valid: {valid}',f'Possible: {possible}',sep='\n')
 
-text='This numbers for contact +99361400905 and +99361400904'
-numbers=phonenumbers.PhoneNumberMatcher(text,"TM")
+text='This numbers for contact +XXX and +XXX, and also'
+numbers=phonenumbers.PhoneNumberMatcher(text,"+XXX")
 
 for number in numbers:
     print(number.raw_string)
